@@ -1,4 +1,4 @@
-Desafio_1_Part_1
+Desafio_1_Part_2
 ================
 
 **Sistema de Votacao**
@@ -15,4 +15,5 @@ Todas as dependencias estao relatadas no arquivo requirements.txt na raiz do pro
 
 > http://127.0.0.1:5000/
 
-Consta os arquivos ANTES.png e DEPOIS.png que retratam a melhoria efetiva apos processo de otimizacao.
+> **Consta os arquivos ANTES.png e DEPOIS.png que retratam a melhoria efetiva apos processo de otimizacao.**
+
