@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+			<ul>
+				{% set total_votos = brothers[0].votos + brothers[1].votos %}
+
+				{% for brother in brothers %}
+				<li>
+					<img src="/static/img/brother-{{ brother.id }}.jpg" alt="" />
+					<strong>{{ brother.nome }}</strong>
+					
+					{% set percentual = ( ( brother.votos * 100 ) /  total_votos) %}
+
+					<div class='percentual'>
+						<div class='votos' style='width:{{ percentual|round(2) }}%'></div>
+					</div>
+
+					<span>{{ percentual|round(2) }}%</span>
+				</li>				
+				{% endfor %}
+			</ul>
+			
+			<p class='total'>
+				<span>Total de votos: <strong>{{ total_votos }}</strong> votos</span>
+				<a href="/">Voltar</a>
+			</p>
+{% endblock %}
